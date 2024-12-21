@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <style>
+    body {
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        background: grey;
+        color: white;
+        padding: 1rem;
+    }
+    nav a {
+        color: white;
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+    .container {
+        padding: 1rem;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .card {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 2px 2px 5px grey;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+    button {
+        background-color: lightgrey;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 5px; 
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"> Home </a>
+        <a href="wishlist.html"> Wishlist </a>
+        <a href="cart.html"> Cart </a>
+    </nav>
+    <main>
+        <button id="loadProducts">Load Products</button>
+        <div id="productGrid" class="grid"></div>
+    </main>
+    <script>
+        
+    </script>
+</body>
+</html>

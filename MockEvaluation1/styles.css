@@ -1,0 +1,25 @@
+
+nav {
+    background: grey;
+    color: white;
+    padding: 1rem;
+}
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px grey;
+}
+
+
