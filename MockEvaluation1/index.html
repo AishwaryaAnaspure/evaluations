@@ -89,9 +89,19 @@
                     <p> Price: ₹ 13.5 </p>
                     <p> Rating: N/A </p>
                     <button class = "addToWishlist"> Add to Wishlist </button>';
-                    
-                }
-            }
+                    card.querySelector('.addToWishlist').addEventListener('click', () => {
+                        addToWishliist(product);
+                    });
+                    productGrid.appendChild(card);
+                });
+            };
+            const addToWishlist = (product) => {
+                const wishlistedProducts = JSON.aprse(localStorage.getItem('wishlistedProducts')) || [];
+                wishlistedProducts.psuh(product);
+                localStorage.setItem('wishlistedProducts', JSON.stringify(wishlistedProducts));
+                aleart('Product added to wishlist!');
+            };
+            loadProductsButton.addEventListener('click', loadProducts);
         });
     </script>
 </body>
